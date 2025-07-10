@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top-up Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Top-up Checker</h1>
+    <textarea id="mobileNumbers" placeholder="Enter Mobile Numbers (one per line)"></textarea>
+    <button id="checkButton">Check Top-up</button>
+
+    <div id="controls" style="margin-top: 20px; display: none;">
+      <label>Filter:
+        <select id="filterSelect">
+          <option value="all">Show All</option>
+          <option value="yes">Only Yes</option>
+          <option value="no">Only No</option>
+        </select>
+      </label>
+      <button id="copyButton">📋 Copy Result</button>
+      <div id="summary" style="margin-top: 10px;"></div>
+    </div>
+
+    <pre id="result" style="margin-top: 20px; font-family: monospace;"></pre>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
